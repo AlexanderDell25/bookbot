@@ -23,7 +23,7 @@ def dictionary_to_report(dict): # function to sort the pre counted dictionary in
     sorted_dict = {}
     header = "--- Begin report of books/frankenstein.txt ---\n"
     print(f"{header}{count_words(file_contents)} words found in the document\n")
-    sorted_dict = {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True) if k.isalpha()} # sort method: sorts by key value and only if k is alphanumeric
+    sorted_dict = {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True) if k.isalpha()} # sort method: sorts by key value and only if k is alphabetic
     for i in sorted_dict:
         print(f"The '{i}' character was found {sorted_dict[i]} times")
     print("--- End report ---")
